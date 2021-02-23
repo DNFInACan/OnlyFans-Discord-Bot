@@ -19,7 +19,29 @@ const links = [
     "https://cdn.discordapp.com/attachments/813446877550477332/813509844061126677/2.jpg",
     "https://cdn.discordapp.com/attachments/813446877550477332/813509888939655218/3.jpg",
     "https://cdn.discordapp.com/attachments/813446877550477332/813509941067251793/4.jpg",
-    "https://cdn.discordapp.com/attachments/589920642086993921/813540824545099796/9k.png"
+    "https://cdn.discordapp.com/attachments/589920642086993921/813540824545099796/9k.png",
+    "https://cdn.discordapp.com/attachments/589920642086993921/813587639386505226/Z.png",
+    "https://cdn.discordapp.com/attachments/589920642086993921/813587716297719808/images.png",
+    "https://cdn.discordapp.com/attachments/589920642086993921/813587996359131186/images.png",
+    "https://cdn.discordapp.com/attachments/589920642086993921/813588087421534248/images.png",
+    "https://cdn.discordapp.com/attachments/589920642086993921/813588133160812554/images.png",
+    "https://cdn.discordapp.com/attachments/589920642086993921/813588144183705600/images.png",
+    "https://cdn.discordapp.com/attachments/589920642086993921/813588163137765386/71Ht2BzPsNrL.png",
+    "https://cdn.discordapp.com/attachments/589920642086993921/813588167704707092/images.png",
+    "https://cdn.discordapp.com/attachments/589920642086993921/813588167629996062/images.png",
+    "https://cdn.discordapp.com/attachments/589920642086993921/813588194087534612/images.png",
+    "https://cdn.discordapp.com/attachments/589920642086993921/813588223611502622/images.png",
+    "https://cdn.discordapp.com/attachments/589920642086993921/813588343911743498/images.png",
+    "https://cdn.discordapp.com/attachments/589920642086993921/813588365307019264/images.png",
+    "https://cdn.discordapp.com/attachments/589920642086993921/813588565715058730/images.png",
+    "https://cdn.discordapp.com/attachments/589920642086993921/813588575504433152/images.png",
+    "https://cdn.discordapp.com/attachments/589920642086993921/813588576754597888/heat_wave_fan.png",
+    "https://cdn.discordapp.com/attachments/589920642086993921/813588718299775037/2Q.png",
+    "https://cdn.discordapp.com/attachments/589920642086993921/813588954946863104/images.png",
+    "https://cdn.discordapp.com/attachments/589920642086993921/813588990816944158/The_Black_Beauty.png",
+    "https://cdn.discordapp.com/attachments/589920642086993921/813589003931746334/51yLydnrtZL.png",
+    "https://cdn.discordapp.com/attachments/589920642086993921/813589014270443540/41yUlA6L7QL.png",
+    "https://cdn.discordapp.com/attachments/589920642086993921/813589107628310538/images.png"
 ];
 
 // Listen to when the bot is online \\
