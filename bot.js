@@ -1,8 +1,17 @@
 // Set up constants \\
 
-const Discord = require("discord.js");
+const { Client, Intents, MessageEmbed } = require('discord.js')
 const config = require("./config.json");
-const bot = new Discord.Client();
+const bot = new Client({
+    allowedMentions: { repliedUser: false },
+    restTimeOffset: 0,
+    shards: 'auto',
+    intents: [
+      Intents.FLAGS.GUILDS,
+      Intents.FLAGS.GUILD_MESSAGES,
+      Intents.FLAGS.GUILD_MEMBERS
+    ]
+  })
 
 const prefix = config.prefix
 
@@ -50,10 +59,11 @@ const links = [
 bot.on('ready', () => {
     console.log(`Bot ${bot.user.tag} is online!`)
     console.log(`Bot currently has: ` + `${bot.channels.cache.size}` + ' channels of ' + `${bot.guilds.cache.size}` + ' servers.')
-    bot.user.setStatus('online')
-        bot.user.setActivity(`${bot.guilds.cache.size} servers. ${prefix}help.`, { type: 'WATCHING' })
-        .then(presence => console.log(`Activity set to ${presence.activities[0].name}`))
-        .catch(console.error);
+    bot.user.setPresence({
+        activities: [{ name: `${bot.guilds.cache.size} servers. ${prefix}help.` }],
+        status: 'online',
+        type: 'WATCHING'
+    })
 });
 
 function fanpictures() {
@@ -65,9 +75,9 @@ function fanpictures() {
 
 // Listen to when a message is sent. \\
 
-bot.on('message', msg => {
+bot.on('messageCreate', msg => {
     // switch statement so I don't have messy if statements.\
-    let pictureEmbed = new Discord.MessageEmbed()
+    let pictureEmbed = new MessageEmbed()
     .setColor('#6bdb4f') 
     switch(msg.content) {
         case `${prefix}fanpic`:
